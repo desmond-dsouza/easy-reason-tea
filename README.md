@@ -1,10 +1,11 @@
 Quick Start to Create Reason TEA App
 ===
 
-A way to start immediately with your Reason TEA app, with zero configuration.
+A way to start immediately with your Reason TEA app, with zero configuration. See Bucklescript-Tea: https://github.com/OvermindDL1/bucklescript-tea
 
-1. `npm install -g bs-platform`
+1. `npm install -g bs-platform` - single global install
 1. Clone this repo & `cd` into it
+1. `rm -rf .git` - remove git link, this is now your project
 1. `npm link bs-platform` - symbolic links to global bs-platform
 2. `npm install` - install all project & dev dependencies
 3. `npm run dev` - build project & serve via local web server
@@ -18,7 +19,7 @@ A way to start immediately with your Reason TEA app, with zero configuration.
 `npm run dev` will:
 
 1. ... run `bsb` in watch mode, which will compile your Reason code (and incrementally recompile it when needed), generating `.js` and other compiler-info files in the `lib/` directory.
-2. ... in parallel, run webpack's dev server at http://localhost:8080/, bundling `bsb` and all other needed files in `public/` and serves them.
+2. ... in parallel, run webpack's dev server at http://localhost:8080/, bundling bsb-produced and all other needed files in `public/` for serving.
 
 
 
